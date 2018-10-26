@@ -36,7 +36,7 @@
  		if ($tambah) {
  			?>
  			<script type="text/javascript">
- 				alert('Tamabah Data Berhasil ');
+ 				alert('Tambah Data Berhasil ');
  				document.location.href="index.php";
  			</script>
  			<?php

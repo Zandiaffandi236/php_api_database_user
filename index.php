@@ -11,7 +11,7 @@
 <body>
     <table align="center" border="1" width="70%">
     <tr>
-        <td colspan="5">
+        <td colspan="6">
             <h3><center>DATA</center></h3>
         </td>
     </tr>
@@ -21,6 +21,7 @@
         <th>password</th>
         <th>level</th>
         <th>fullname</th>
+        <th>opsi</th>
     </tr>
          <?php 
 
@@ -33,6 +34,11 @@
          <td><?php echo $data['password']; ?></td>
          <td><?php echo $data['level']; ?></td>
          <td><?php echo $data['fullname']; ?></td>
+         <td>
+         <a onclick="return confirm('Yakin untuk menghapus ?')"
+			href="delete-data.php?id=<?php echo $data['id']; ?>">Hapus</a>
+			<a href="update-data.php?id=<?php echo $data['id']; ?>">Edit</a>
+		 </td>
     </tr>
     <?php
             }
